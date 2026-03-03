@@ -1,0 +1,2 @@
+[console_scripts]
+empath = empath.gui:main
