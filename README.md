@@ -3,7 +3,7 @@
 <p align="center">
     <a href="https://huggingface.co/ACE-Step/ACE-Step-v1-3.5B">Hugging Face</a> |
     <a href="https://modelscope.cn/models/ACE-Step/ACE-Step-v1-3.5B">ModelScope</a> |
-    <a href="https://discord.gg/PeWDxrkdj7">Discord</a>
+
 </p>
 
 ## 📝 Introduction
@@ -81,4 +81,5 @@ The system will automatically download the default required model checkpoints on
 ## 📜 Disclaimer
 
 Swara is a tool for creative production and entertainment. Users are responsible for ensuring the originality of generated works, clearly disclosing AI involvement, and securing permissions for any adapted styles or materials. The authors are not responsible for the creation of inappropriate or harmful content.
+
 
