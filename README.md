@@ -1,10 +1,6 @@
 <h1 align="center">Swara</h1>
 <h1 align="center"> Open-Source Music Generation</h1>
 
-<p align="center">
-    <img src="./assets/organization_logos.png" width="100%" alt="StepFun Logo">
-</p>
-
 ## Table of Contents
 
 - [✨ Features](#-features)
