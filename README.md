@@ -1,14 +1,5 @@
-<h1 align="center">ACE-Step 1.5</h1>
-<h1 align="center">Pushing the Boundaries of Open-Source Music Generation</h1>
-<p align="center">
-    <a href="https://ace-step.github.io/ace-step-v1.5.github.io/">Project</a> |
-    <a href="https://huggingface.co/ACE-Step/Ace-Step1.5">Hugging Face</a> |
-    <a href="https://modelscope.cn/models/ACE-Step/Ace-Step1.5">ModelScope</a> |
-    <a href="https://huggingface.co/spaces/ACE-Step/Ace-Step-v1.5">Space Demo</a> |
-    <a href="https://discord.gg/PeWDxrkdj7">Discord</a> |
-    <a href="https://arxiv.org/abs/2602.00744">Technical Report</a> |
-    <a href="https://github.com/ace-step/awesome-ace-step">Awesome ACE-Step</a>
-</p>
+<h1 align="center">Swara</h1>
+<h1 align="center"> Open-Source Music Generation</h1>
 
 <p align="center">
     <img src="./assets/organization_logos.png" width="100%" alt="StepFun Logo">
@@ -26,17 +17,17 @@
 - [🔬 Benchmark](#-benchmark)
 
 ## 📝 Abstract
-🚀 We present ACE-Step v1.5, a highly efficient open-source music foundation model that brings commercial-grade generation to consumer hardware. On commonly used evaluation metrics, ACE-Step v1.5 achieves quality beyond most commercial music models while remaining extremely fast—under 2 seconds per full song on an A100 and under 10 seconds on an RTX 3090. The model runs locally with less than 4GB of VRAM, and supports lightweight personalization: users can train a LoRA from just a few songs to capture their own style.
+🚀 We present Swara, a highly efficient open-source music foundation model that brings commercial-grade generation to consumer hardware. On commonly used evaluation metrics, Swara achieves quality beyond most commercial music models while remaining extremely fast—under 2 seconds per full song on an A100 and under 10 seconds on an RTX 3090. The model runs locally with less than 4GB of VRAM, and supports lightweight personalization: users can train a LoRA from just a few songs to capture their own style.
 
 🌉 At its core lies a novel hybrid architecture where the Language Model (LM) functions as an omni-capable planner: it transforms simple user queries into comprehensive song blueprints—scaling from short loops to 10-minute compositions—while synthesizing metadata, lyrics, and captions via Chain-of-Thought to guide the Diffusion Transformer (DiT). ⚡ Uniquely, this alignment is achieved through intrinsic reinforcement learning relying solely on the model's internal mechanisms, thereby eliminating the biases inherent in external reward models or human preferences. 🎚️
 
-🔮 Beyond standard synthesis, ACE-Step v1.5 unifies precise stylistic control with versatile editing capabilities—such as cover generation, repainting, and vocal-to-BGM conversion—while maintaining strict adherence to prompts across 50+ languages. This paves the way for powerful tools that seamlessly integrate into the creative workflows of music artists, producers, and content creators. 🎸
+🔮 Beyond standard synthesis, Swara unifies precise stylistic control with versatile editing capabilities—such as cover generation, repainting, and vocal-to-BGM conversion—while maintaining strict adherence to prompts across 50+ languages. This paves the way for powerful tools that seamlessly integrate into the creative workflows of music artists, producers, and content creators. 🎸
 
 
 ## ✨ Features
 
 <p align="center">
-    <img src="./assets/application_map.png" width="100%" alt="ACE-Step Framework">
+    <img src="./assets/application_map.png" width="100%" alt="Swara Framework">
 </p>
 
 ### ⚡ Performance
@@ -68,7 +59,7 @@
 | ✅ Quality Scoring | Automatic quality assessment for generated audio |
 
 ## 🔔 Staying ahead
-Star ACE-Step on GitHub and be instantly notified of new releases
+Star Swara on GitHub and be instantly notified of new releases
 ![](assets/star.gif)
 
 ## 🤝 Partners
@@ -92,8 +83,8 @@ curl -LsSf https://astral.sh/uv/install.sh | sh          # macOS / Linux
 # powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"  # Windows
 
 # 2. Clone & install
-git clone https://github.com/ACE-Step/ACE-Step-1.5.git
-cd ACE-Step-1.5
+git clone https://github.com/Swara/Swara-1.5.git
+cd Swara-1.5
 uv sync
 
 # 3. Launch Gradio UI (models auto-download on first run)
@@ -105,7 +96,7 @@ uv run acestep-api
 
 Open http://localhost:7860 (Gradio) or http://localhost:8001 (API).
 
-> 📦 **Windows users:** A [portable package](https://files.acemusic.ai/acemusic/win/ACE-Step-1.5.7z) with pre-installed dependencies is available. See [Installation Guide](./docs/en/INSTALL.md#-windows-portable-package).
+> 📦 **Windows users:** A [portable package](https://files.acemusic.ai/acemusic/win/Swara-1.5.7z) with pre-installed dependencies is available. See [Installation Guide](./docs/en/INSTALL.md#-windows-portable-package).
 
 > 📖 **Full installation guide** (AMD/ROCm, Intel GPU, CPU, environment variables, command-line options): [English](./docs/en/INSTALL.md) | [中文](./docs/zh/INSTALL.md) | [日本語](./docs/ja/INSTALL.md)
 
@@ -195,7 +186,7 @@ LANGUAGE=en
 
 ## 📖 Tutorial
 
-**🎯 Must Read:** Comprehensive guide to ACE-Step 1.5's design philosophy and usage methods.
+**🎯 Must Read:** Comprehensive guide to Swara 1.5's design philosophy and usage methods.
 
 | Language | Link |
 |----------|------|
@@ -223,7 +214,7 @@ See also the **LoRA Training** tab in Gradio UI for one-click training, or [Grad
 ## 🏗️ Architecture
 
 <p align="center">
-    <img src="./assets/ACE-Step_framework.png" width="100%" alt="ACE-Step Framework">
+    <img src="./assets/Swara_framework.png" width="100%" alt="Swara Framework">
 </p>
 
 ## 🦁 Model Zoo
@@ -236,9 +227,9 @@ See also the **LoRA Training** tab in Gradio UI for one-click training, or [Grad
 
 | DiT Model | Pre-Training | SFT | RL | CFG | Step | Refer audio | Text2Music | Cover | Repaint | Extract | Lego | Complete | Quality | Diversity | Fine-Tunability | Hugging Face |
 |-----------|:------------:|:---:|:--:|:---:|:----:|:-----------:|:----------:|:-----:|:-------:|:-------:|:----:|:--------:|:-------:|:---------:|:---------------:|--------------|
-| `acestep-v15-base` | ✅ | ❌ | ❌ | ✅ | 50 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | Medium | High | Easy | [Link](https://huggingface.co/ACE-Step/acestep-v15-base) |
-| `acestep-v15-sft` | ✅ | ✅ | ❌ | ✅ | 50 | ✅ | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ | High | Medium | Easy | [Link](https://huggingface.co/ACE-Step/acestep-v15-sft) |
-| `acestep-v15-turbo` | ✅ | ✅ | ❌ | ❌ | 8 | ✅ | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ | Very High | Medium | Medium | [Link](https://huggingface.co/ACE-Step/Ace-Step1.5) |
+| `acestep-v15-base` | ✅ | ❌ | ❌ | ✅ | 50 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | Medium | High | Easy | [Link](https://huggingface.co/Swara/acestep-v15-base) |
+| `acestep-v15-sft` | ✅ | ✅ | ❌ | ✅ | 50 | ✅ | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ | High | Medium | Easy | [Link](https://huggingface.co/Swara/acestep-v15-sft) |
+| `acestep-v15-turbo` | ✅ | ✅ | ❌ | ❌ | 8 | ✅ | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ | Very High | Medium | Medium | [Link](https://huggingface.co/Swara/Swara1.5) |
 | `acestep-v15-turbo-rl` | ✅ | ✅ | ✅ | ❌ | 8 | ✅ | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ | Very High | Medium | Medium | To be released |
 
 ### LM Models
@@ -251,7 +242,7 @@ See also the **LoRA Training** tab in Gradio UI for one-click training, or [Grad
 
 ## 🔬 Benchmark
 
-ACE-Step 1.5 includes `profile_inference.py`, a profiling & benchmarking tool that measures LLM, DiT, and VAE timing across devices and configurations.
+Swara 1.5 includes `profile_inference.py`, a profiling & benchmarking tool that measures LLM, DiT, and VAE timing across devices and configurations.
 
 ```bash
 python profile_inference.py                        # Single-run profile
@@ -264,10 +255,10 @@ python profile_inference.py --mode benchmark       # Configuration matrix
 
 This project is licensed under [MIT](./LICENSE)
 
-ACE-Step enables original music generation across diverse genres, with applications in creative production, education, and entertainment. While designed to support positive and artistic use cases, we acknowledge potential risks such as unintentional copyright infringement due to stylistic similarity, inappropriate blending of cultural elements, and misuse for generating harmful content. To ensure responsible use, we encourage users to verify the originality of generated works, clearly disclose AI involvement, and obtain appropriate permissions when adapting protected styles or materials. By using ACE-Step, you agree to uphold these principles and respect artistic integrity, cultural diversity, and legal compliance. The authors are not responsible for any misuse of the model, including but not limited to copyright violations, cultural insensitivity, or the generation of harmful content.
+Swara enables original music generation across diverse genres, with applications in creative production, education, and entertainment. While designed to support positive and artistic use cases, we acknowledge potential risks such as unintentional copyright infringement due to stylistic similarity, inappropriate blending of cultural elements, and misuse for generating harmful content. To ensure responsible use, we encourage users to verify the originality of generated works, clearly disclose AI involvement, and obtain appropriate permissions when adapting protected styles or materials. By using Swara, you agree to uphold these principles and respect artistic integrity, cultural diversity, and legal compliance. The authors are not responsible for any misuse of the model, including but not limited to copyright violations, cultural insensitivity, or the generation of harmful content.
 
 🔔 Important Notice  
-The only official website for the ACE-Step project is our GitHub Pages site.    
+The only official website for the Swara project is our GitHub Pages site.    
  We do not operate any other websites.  
 🚫 Fake domains include but are not limited to:
 ac\*\*p.com, a\*\*p.org, a\*\*\*c.org  
@@ -275,7 +266,7 @@ ac\*\*p.com, a\*\*p.org, a\*\*\*c.org
 
 ## 🌐 Community & Ecosystem
 
-Check out **[Awesome ACE-Step](https://github.com/ace-step/awesome-ace-step)** — a curated list of community projects, alternative UIs, ComfyUI nodes, cloud deployments, training tools, and more built around ACE-Step.
+Check out **[Awesome Swara](https://github.com/Swara/awesome-Swara)** — a curated list of community projects, alternative UIs, ComfyUI nodes, cloud deployments, training tools, and more built around Swara.
 
 ## 🙏 Acknowledgements
 
@@ -288,9 +279,9 @@ If you find this project useful for your research, please consider citing:
 
 ```BibTeX
 @misc{gong2026acestep,
-	title={ACE-Step 1.5: Pushing the Boundaries of Open-Source Music Generation},
+	title={Swara 1.5: Pushing the Boundaries of Open-Source Music Generation},
 	author={Junmin Gong, Yulin Song, Wenxiao Zhao, Sen Wang, Shengyuan Xu, Jing Guo}, 
-	howpublished={\url{https://github.com/ace-step/ACE-Step-1.5}},
+	howpublished={\url{https://github.com/Swara/Swara-1.5}},
 	year={2026},
 	note={GitHub repository}
 }
